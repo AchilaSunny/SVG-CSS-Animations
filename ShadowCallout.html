@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Shadow Callout</title>
+        <style>
+            .zoomanimation {                
+                animation:zoomin 2s  5s linear forwards infinite;                 
+            }
+            @keyframes  zoomin{              
+                0% {
+                    stroke-width: 4; 
+                    stroke-opacity: .7;                   
+                    } 
+                25% {
+                    stroke-width: 6; 
+                    stroke-opacity: 0.5; 
+                    
+                }                  
+                50% {
+                    stroke-width: 8;
+                    stroke-opacity: 0.3; 
+                    
+                }
+                100% {
+                    stroke-width: 10;
+                    stroke-opacity: 0.1; 
+                    
+                } 
+            }
+        </style>
+    </head>
+    <body>        
+        <svg  id="callout_animation" x="0px" y="0px" width = "700" height = "500" style="background-color: #555;" >
+            
+            <g transform = "translate(200,200)">
+                <path d="M-3,3a1,1,0,0,1,-1,-1v-4a1,1,0,0,1,1,-1h6a1,1,0,0,1,1,1v4a1,1,0,0,1,-1,1h-2l-2,1l-1,-1Z"                  
+                id="callout" class = "zoomanimation" transform = "scale(10)" 
+                fill = "#23bab5" stroke-width = "1" stroke = "#23bab5"/>
+                  
+            </g>
+                
+        </svg>
+    
+        
+    </body>
+</html>
+
+
+
+
